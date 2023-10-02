@@ -1,21 +1,70 @@
+:root {
+    --primary: rgb(81, 81, 117);
+    --primary-darker: rgb(7, 7, 15);
+    --secondary: rgb(102, 47, 102);
+
+    --green: green;
+    --blue: blue;
+    --magenta: magenta;
+    --red: red;
+}
+
 html, body, h1, h2, h3 {
     margin: 0;
     padding: 0;
 }
 
+body, html {
+    height: 100%;
+}
+
 body {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+    flex-flow: column;
 }
 
 header {
-    background-color: blue;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+header input {
+    background-color: var(--primary-darker);
+    border: none;
+    border-radius: 10px;
+}
+
+header button {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary);
+    padding: 10px;
+}
+
+.user-info-img {
+    max-width: 50px;
+    border-radius: 50%;
 }
 
 main {
-    background-color: rgb(123, 123, 250);
+    background-color: var(--primary-darker);
+    flex: 1;
 }
 
 footer {
-    background-color: blue;
+    padding: 10px;
+    background-color: var(--primary-);
 }
