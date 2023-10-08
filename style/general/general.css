@@ -1,0 +1,32 @@
+@import url('../navbar/navbar.css');
+@import url('../sidebar/sidebar.css');
+@import url('../main/main.css');
+@import url('../footer/footer.css');
+
+:root {
+    --primary: rgb(81, 81, 117);
+    --primary-darker: rgb(7, 7, 15);
+    --secondary: rgb(102, 47, 102);
+
+    --green: green;
+    --blue: blue;
+    --magenta: magenta;
+    --red: red;
+}
+
+html, body, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: auto 1fr auto;
+}

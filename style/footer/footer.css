@@ -1,0 +1,5 @@
+footer {
+    padding: 10px;
+    background-color: var(--primary);
+    grid-column: 1/3;
+}
